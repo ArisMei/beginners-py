@@ -15,7 +15,6 @@ def main():
             except (ValueError, IndexError):
                 print("Image dimensions are incorrect or the file '{:s}' is empty. Program ends.".format(filename))
                 return
-            
             # Read the remaining lines for selected positions
             positions = set()
             for line in file:
