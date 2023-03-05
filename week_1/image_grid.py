@@ -1,6 +1,6 @@
-# import os
-# new_directory = "C:\\Users\\User\\OneDrive - Universidad Politécnica de Madrid\\Aalto\\beginners-Py\\week_1"
-# os.chdir(new_directory)
+import os
+new_directory = "C:\\Users\\User\\OneDrive - Universidad Politécnica de Madrid\\Aalto\\beginners-Py\\week_1"
+os.chdir(new_directory)
 def main():
     filename = input("Enter the name of the file to be read:\n")
     try:
@@ -11,16 +11,14 @@ def main():
                 line = file.readline().strip()
                 # Here we obtain the width and height of the image
                 width, height = map(int, line.split(","))
-                print(width, height)
+                #print(width, height)
             except (ValueError, IndexError):
                 print("Image dimensions are incorrect or the file '{:s}' is empty. Program ends.".format(filename))
                 return
-
+            
             # Read the remaining lines for selected positions
             positions = set()
-            line_count = 2
             for line in file:
-                line_count += 1
                 try:
                     x, y = map(int, line.strip().split(","))
                     positions.add((x, y))
