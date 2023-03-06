@@ -1,6 +1,6 @@
-import os
-new_directory = "C:\\Users\\User\\OneDrive - Universidad Politécnica de Madrid\\Aalto\\beginners-Py\\week_1"
-os.chdir(new_directory)
+# import os
+# new_directory = "C:\\Users\\User\\OneDrive - Universidad Politécnica de Madrid\\Aalto\\beginners-Py\\week_1"
+# os.chdir(new_directory)
 def main():
     filename = input("Enter the name of the file to be read:\n")
     try:
