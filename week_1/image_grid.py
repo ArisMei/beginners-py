@@ -1,4 +1,4 @@
-# import os
+# import os.path
 # new_directory = "C:\\Users\\User\\OneDrive - Universidad Politécnica de Madrid\\Aalto\\beginners-Py\\week_1"
 # os.chdir(new_directory)
 def main():
