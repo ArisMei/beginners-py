@@ -39,3 +39,20 @@ for i in range(listLength):
     randomlist.append(random.randint(1, 5))
 
 
+startOwn = time.time()
+avg = calc_average(randomlist)
+std = calc_std(randomlist)
+endOwn = time.time()
+print("Average: ", avg)
+print("Standard deviation: ", std)
+print("My own calculations took: ")
+print(endOwn-startOwn)
+
+startNumpy = time.time()
+avg = np.average(randomlist)
+std = np.std(randomlist)
+endNumpy = time.time()
+print("Average: ", avg)
+print("Standard deviation: ", std)
+print("Numpy calculations took: ")
+print(endNumpy-startNumpy)
