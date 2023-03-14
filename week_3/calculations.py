@@ -1,7 +1,7 @@
-import os
-new_directory = "C:\\Users\\User\\OneDrive - Universidad Politécnica de Madrid\\Aalto\\beginners-Py\\week_3"
-os.chdir(new_directory)
-os.getcwdb()
+# import os
+# new_directory = "C:\\Users\\User\\OneDrive - Universidad Politécnica de Madrid\\Aalto\\beginners-Py\\week_3"
+# os.chdir(new_directory)
+# os.getcwdb()
 
 
 import numpy as np
