@@ -54,7 +54,7 @@ def main():
                 print("{:s}: {:s},{:s}".format(df['City'][i],latitudes[i],longitudes[i]))
             break
         else:
-            print("Error in readinf the file {:s}. Pleas try again".format(filename))
+            print("Error in readinf the file {:s}. Please try again".format(filename))
 
 
 main()
