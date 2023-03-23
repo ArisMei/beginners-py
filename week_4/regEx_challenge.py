@@ -1,8 +1,10 @@
-import os
-new_directory = "C:\\Users\\User\\OneDrive - Universidad Politécnica de Madrid\\Aalto\\beginners-Py\\week_4"
-os.chdir(new_directory)
-os.getcwdb()
+# import os
+# new_directory = "C:\\Users\\User\\OneDrive - Universidad Politécnica de Madrid\\Aalto\\beginners-py\\week_4"
+# os.chdir(new_directory)
+# os.getcwdb()
 
+# Template code for Exercise "regEx_challenge"
+      
 import pandas as pd
 
 """
@@ -19,11 +21,7 @@ TASK:
 """
 
 def challenge(dataset):
-
-
-    regex = r"^[WAP]*((?!U[WU]|A[P|A])[WAP])*U?"
-
-
+    regex =  "^(?!.*U[WU])(?!.*A[PA])([WAUP]+)$"
     return str(dataset[dataset["Words"].str.match(regex)])
 
 print("Output: " + challenge(pd.read_csv("challengeSetA.csv")))
